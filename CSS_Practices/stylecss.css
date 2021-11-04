@@ -1,0 +1,12 @@
+body {
+    margin:0;
+    padding:0;
+}
+
+
+nav{
+    border:1px solid red;
+    border-style: dashed;
+    border-width:5px;
+    /* border-color: green; */
+}

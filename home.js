@@ -10,3 +10,9 @@ console.log(someNumber)
 var num1 = 10;
 
 console.log(250/num1);
+
+asdasdas
+
+assdasf
+asdasdasas
+debuggerasd

@@ -1,12 +1,56 @@
 body {
     margin:0;
     padding:0;
+    background-color: #f5f5f5;
 }
 
 
 nav{
     border:1px solid red;
-    border-style: dashed;
-    border-width:5px;
-    /* border-color: green; */
+    border-style: ;
+    border-width:5px; 
+    border-color: green;
+}
+
+label, input, textarea, button{
+    display:block;
+
+}
+
+form{
+    margin:0 auto;
+    width:15%;
+    padding:30px;
+    background-color:#fff;
+
+}
+
+label {
+    margin-bottom:6px;
+
+}
+
+input{
+    margin-bottom: 4px;
+    width:100%;
+    border:1px solid #ccc;
+    padding:5px;
+
+    
+    
+}
+
+textarea{
+    margin-bottom: 4px;
+    width:100%;
+    border:1px solid #ccc;
+    padding:5px;
+    
+}
+
+button{
+    border:1px solid #aaa;
+    background-color:gray;
+    padding: 10px;
+    margin: 0 auto;
 }

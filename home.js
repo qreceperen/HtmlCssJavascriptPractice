@@ -11,16 +11,6 @@ var num1 = 10;
 
 console.log(250/num1);
 
-<<<<<<< HEAD
-asdasdas
-
-assdasf
-asdasdasas
-
-=======
-asdsd
-SVGFEDropShadowElement
+git deneme hellloooo
 
 
-
->>>>>>> 84195aeddda33ebd471714745bf6dd7f676255f5

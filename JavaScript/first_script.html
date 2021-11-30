@@ -8,8 +8,21 @@
 </head>
 <body>
     
+    <h1 id="test">Hello World!!!</h1>
+
+    <div id = 'chemistry'> Chemistry is a science that observe the molecules, atom, electrons and protons.</div>
+
+
     <script>
-        alert("hi my name is recep EREN");
+        var test = document.getElementById("test");
+        var oldText = test.innerText;
+        test.innerHTML = "My name is Recep How are you?";
+
+        var chemistry = document.getElementById('chemistry');
+        var originalChemistry = chemistry.innerText
+        chemistry.innerText = 'Biology is best'
+     
+
     </script>
 
 

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Project 1</title>
+</head>
+<body>
+
+    <h1 id="sentence">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius impedit optio magnam totam quibusdam, perferendis nam ipsum illo natus aut distinctio eveniet esse mollitia sequi? Illum perspiciatis laudantium cupiditate a?</h1>
+
+    <script>
+     
+        var sentenceNode = document.getElementById("sentence")
+        var sentence = sentenceNode.innerText
+        // console.log("Sentence", sentence)
+        var firstTenChars = sentence.substr(10, 15)
+
+        var splitLorem = sentence.split(" ")
+        // console.log(splitLorem)
+        // console.log(sentence)
+        var bracketWords = splitLorem.join(")(")
+
+        console.log(bracketWords)
+        
+        
+    </script>
+
+    <h2></h2>
+
+</body>
+</html>

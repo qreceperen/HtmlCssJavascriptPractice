@@ -8,21 +8,18 @@
 </head>
 <body>
     
-    <h1 id="test">Hello World!!!</h1>
-
-    <div id = 'chemistry'> Chemistry is a science that observe the molecules, atom, electrons and protons.</div>
+    <h1> Your input was</h1>
+    <h3 id = "customInput">_____________</h3>
 
 
     <script>
-        var test = document.getElementById("test");
-        var oldText = test.innerText;
-        test.innerHTML = "My name is Recep How are you?";
 
-        var chemistry = document.getElementById("chemistry");
-        var originalChemistry = chemistry.innerText
-        chemistry.innerText = 'Biology is best'
-     
-
+       var name =  prompt("What is your name? ")
+       name = name.toLowerCase()
+       var h3Node = document.getElementById("customInput")
+       h3Node.innerText = name 
+    //    console.log ("Your name is", name)
+      
     </script>
 
 

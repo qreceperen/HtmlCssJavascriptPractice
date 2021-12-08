@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Project </title>
+</head>
+<body>
+    <!-- 1. Ask the user for a URL <br />
+    2.Check if the link starts with http <br />
+    3. If it does't start with http, fix the variable <br />
+    4. Inject a link into your page using inner HTML <br />
+     -->
+     <p>
+        This is the link 
+        <span id='link'></span>
+     </p>
+    
+
+    <script>
+        var url = prompt("Enter a URL");
+        if (url.substr(0,4) == 'http') {
+
+            console.log("The URL is good")
+        } else{
+            // console.warm("Bad URL")
+            url= "http://" + url   
+        }
+
+        var spanNode = document.getElementById('link');
+        spanNode.innerHTML = "<a href =''" + url + "'>" + url +"</a>";
+        
+    
+    </script>
+
+
+
+</body>
+</html>

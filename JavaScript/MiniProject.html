@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1 id = "welcome">Welcome</h1>
+    <h4 id="elem"></h4>
+
+<script>
+   
+//    1.Ask the user for a Number
+//    2.Cast the input to a Number
+//    3. Make sure the number is Valid
+//    4. If the number is over 18, change some text on the page
+
+var num = prompt ("Enter a number")
+num = Number(num)
+if(num){
+    if(num>=18) {
+        var elem = document.getElementById("elem");
+        elem.innerHTML= "You are 18 or older!!!"
+    }
+}
+
+
+</script>
+
+</body>
+</html>

@@ -7,23 +7,23 @@
     <title>Hellooooo</title>
 </head>
 <body>
-    <h1 id="text"> Are you there </h1>
+  
    
 
 
     <script>
+        var name = "Henrsy";
+        if (name =="Recep") {
+            console.log("AWESOME");
 
-        var input = prompt("What course are you taking?")
-        var inputLower = input.toLowerCase()
-        var text = document.getElementById("text")
-
-        if (inputLower == "javascript for beginners") {
-            text.innerHTML = "<strong> WELCOME</strong> to JavaScript for <strong> Beginners </strong>";
-
+        } else if (name=="Zephyr"){
+            console.log("MEOW");
+        } else if (name=="Henry"){
+            console.log("little MEOW");
         } else {
-            text.innerHTML = "You are in the wrong course";
-
+            console.log("Not handled")
         }
+   
         
     
     </script>

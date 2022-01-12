@@ -7,28 +7,45 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Mini Project: Tip calculator</h1>
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <div class="col-sm-12">
+                <h1>Tip calculator</h1>
+            </div>
+        </div>
+    </div>
 
-    <ol>
-        <li>Create a simple tip calculator</li>
-        <li>It needs to accept 2 parameters</li>
-        <li>Make the tip parameter optional</li>
-        <li>Return the total amount and save it to a var</li>
-    </ol>
-    <h1 id= "text"> </h1>
-   
+    <div class="form-group row mt-4">
+        <label for="billAmount" class="col-sm-3 col-form-label"> Bill Amount (in dollars)</label>
+        <div class="col-sm-9">
+            <input type="number" class="form-control" step="0.01" id="billAmount" min="0" placeholder="ie. 25.99">
+        </div>
+    </div>
+
+    <div class="form-group row ">
+        <label for="tipAmount" class="col-sm-3 col-form-label"> Tip Amount (as a %) </label>
+
+        <div class="col-sm-9">
+            <input type="number" class="form-control" step="1" id="tipAmount" min="0" max="100" placeholder="ie. 9">
+        </div>
+    </div>
+
+    <div>
+        <div class="form-group row">
+            <div class="col-sm-3 col-form-label"></div>
+            <div class="col-sm-9">
+                <button class="btn btn-primary">Calculate Tip and Total Bill</button>
+            </div>
+        </div>
+    </div>
+    
+
+
+
 
 
     <script>
-        function tip(totalAmount, tip=10){
-            tip = tip / 100;
-            var tipAmount = totalAmount * tip
-            totalAmount = totalAmount + tipAmount
-            return totalAmount
-        }
-        var totalBill = tip (25, 10);
-        console.log(totalBill)
-    
+      
     
     </script>
 

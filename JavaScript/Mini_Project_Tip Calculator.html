@@ -49,7 +49,21 @@
 
     <script>
       function calculate(){
-          console.log("Clicked")
+          var billAmount = Number(document.getElementById("billAmount").value )
+          var tipAmount = Number(document.getElementById("tipAmount").value)
+            tipAmount = tipAmount / 100
+
+         var totalTip = billAmount * tipAmount
+         var tipHtml = "<h3>Total tip: <small>$" + totalTip.toFixed(2) + "</small></h3>"
+         document.querySelector(".tip-amount").innerHTML = tipHtml
+
+         var totalBillAmount = totalTip + billAmount
+         var billHtml = "<h3>Total bill with tip: <small>$" + totalBillAmount.toFixed(2)+ "</small></h3>";
+         document.querySelector(".total-with-tip").innerHTML = billHtml
+         
+         console.log(billAmount, tipAmount)
+         
+
       }
     
     </script>
